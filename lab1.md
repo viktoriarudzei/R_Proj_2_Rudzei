@@ -28,7 +28,7 @@ head(table_events, n=6)
 ## 2. За допомогою download.file() завантажте файл getdata_data_ss06hid.csv за посиланням https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv та завантажте дані в R. Code book, що пояснює значення змінних знаходиться за посиланням https://www.dropbox.com/s/dijv0rlwo4mryv5/PUMSDataDict06.pdf?dl=0 Необхідно знайти, скільки property мають value $1000000+
 ```{R}
 housing_web<-"https://d396qusza40orc.cloudfront.net/getdata%2Fdata%2Fss06hid.csv"
-housing<-"C:/Users/dumen/Documents/housing.csv"
+housing<-"C:/Users/user/Documents/housing.csv"
 download.file (housing_web, housing)
 table_housing<-read.csv(housing)
 length(which(table_housing$VAL==24))
